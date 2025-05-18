@@ -13,13 +13,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from malta device
 $(call inherit-product, device/motorola/malta/device.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit TWRP common configs instead of Omni
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := malta
-PRODUCT_NAME := omni_malta
+PRODUCT_NAME := twrp_malta
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto e(7)
 PRODUCT_MANUFACTURER := motorola
