@@ -70,3 +70,8 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+
+# Boot image instead of recovery
+TARGET_NO_RECOVERY := true
+BOARD_HAS_NO_REAL_RECOVERY := true
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
