@@ -74,4 +74,4 @@ TW_USE_TOOLBOX := true
 # Boot image instead of recovery
 TARGET_NO_RECOVERY := true
 BOARD_HAS_NO_REAL_RECOVERY := true
-#BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
