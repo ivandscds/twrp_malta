@@ -50,4 +50,4 @@ PLATFORM_VERSION := 16.1.0
 # Boot image instead of recovery
 TARGET_NO_RECOVERY := true
 BOARD_HAS_NO_REAL_RECOVERY := true
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/motorola/malta/mkbootimg.mk
