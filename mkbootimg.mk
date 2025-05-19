@@ -1,6 +1,11 @@
 MKBOOTIMG := $(HOST_OUT_EXECUTABLES)/mkbootimg
 INSTALLED_BOOTIMAGE_TARGET := $(PRODUCT_OUT)/boot.img
 
+# Definimos las rutas si no estaban definidas antes
+INSTALLED_KERNEL_TARGET := $(TARGET_PREBUILT_KERNEL)
+RECOVERY_RAMDISK_TARGET := $(PRODUCT_OUT)/ramdisk-recovery.img
+
+# Regla para generar el boot.img
 $(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) \
         $(INSTALLED_KERNEL_TARGET) \
         $(RECOVERY_RAMDISK_TARGET)
